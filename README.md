@@ -8,8 +8,13 @@ Company Name: Bob's Super Spectacular Wonderful Amazing Store.
 - [ ] Create a cart page [extra credit]
 - [ ] Create a user account page [ extra credit]
 
-there isn't a design for the the cart or user account page.
+there isn't a design for the the cart or user account page. use below as a reference for the two pages.
+
+_Cart Page_
 ![Cart Image](reference/cart.png)
+
+_User Account Page_
+![User Account](reference/user.png)
 
 ## Resources:
 
