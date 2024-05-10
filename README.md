@@ -5,17 +5,20 @@ Company Name: Bob's Super Spectacular Wonderful Amazing Store.
 - [ ] Create a home page that features the 4 items on th page
 - [ ] Create a PLP (Product List Page) page
 - [ ] Create a PDP (Product Detail) page
-- [ ] Create a cart page
-- [ ] Create a user account page
+- [ ] Create a cart page [extra credit]
+- [ ] Create a user account page [ extra credit]
+
+there isn't a design for the the cart or user account page.
+![Cart Image](reference/cart.png)
 
 ## Resources:
 
 ### _Design Files_
 
 - Logo: [File](https://d.pr/i/ugdkaa)
-- Sketch File: [File](https://www.sketch.com/s/567b2d62-1ed6-4914-a79d-caf4af030e5d/v/ZWzRdG/)
+- Sketch File: [File](https://www.sketch.com/s/567b2d62-1ed6-4914-a79d-caf4af030e5d)
 
-You can find the assets for the store located in the section that says [Download Assets](https://d.pr/i/HVUSsK).
+You can find the assets for the store located in the section that says [Download Assets](https://d.pr/i/41q8sX).
 
 ### _Api_
 
@@ -34,8 +37,8 @@ I was unable to find a free react component library. I feel between this one tha
 
 ### _Two Collections_
 
-Mens's clothing: [https://fakestoreapi.com/products/category/men clothing](https://fakestoreapi.com/products/category/men%20clothing)
-women's clothing: [https://fakestoreapi.com/products/category/women clothing](https://fakestoreapi.com/products/category/women%20clothing)
+Mens's clothing: [https://fakestoreapi.com/products/category/men's clothing](https://fakestoreapi.com/products/category/men%20clothing)
+women's clothing: [https://fakestoreapi.com/products/category/women's clothing](https://fakestoreapi.com/products/category/women%20clothing)
 
 Use the following user for the cart: [https://fakestoreapi.com/carts/user/2](https://fakestoreapi.com/carts/user/2)
 
@@ -43,7 +46,7 @@ User demographic: [https://fakestoreapi.com/users/2](https://fakestoreapi.com/us
 
 ## Deployment
 
-You don't need to worry about the deployment of the site. The site is connected to a vercel project. As soon as you push up to main it will deploy the the project url. You can view your store at the following url: [url](https://mock-store.vercel.app/ "Mock Store")
+You don't need to worry about the deployment of the site. The site is connected to a vercel project. As soon as you push up to main it will deploy the the project url. You can view your store at the following url: [url](https://mock-store-vert.vercel.app/ "Mock Store")
 
 ## Additional Information
 
