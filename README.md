@@ -3,8 +3,8 @@
 Company Name: Bob's Super Spectacular Wonderful Amazing Store.
 
 - [ ] Create a home page that features the 4 items on th page
-- [ ] Create a PLP (Product List Page) page
-- [ ] Create a PDP (Product Detail) page
+- [ ] Create a PLP (Product List Page) page for Men's clothing
+- [ ] Create a PDP (Product Detail) page from this page you should be able to have a working example of adding to the cart.
 - [ ] Create a cart page [extra credit]
 - [ ] Create a user account page [ extra credit]
 
@@ -51,7 +51,7 @@ User demographic: [https://fakestoreapi.com/users/2](https://fakestoreapi.com/us
 
 ## Deployment
 
-You don't need to worry about the deployment of the site. The site is connected to a vercel project. As soon as you push up to main it will deploy the the project url. You can view your store at the following url: [url](https://mock-store-vert.vercel.app/ "Mock Store")
+You don't need to worry about the deployment of the site. The site is connected to a vercel project. As soon as you push up to main it will deploy the the project url. You can view your store at the following url: [url](https://effie--mock-test-store.netlify.app "Mock Store")
 
 ## Additional Information
 
