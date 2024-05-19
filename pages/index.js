@@ -8,15 +8,22 @@ const Home = () => {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    axios.get('https://fakestoreapi.com/products?limit=4')
-      .then(response => {
-        setItems(response.data);
-      })
-      .catch(error => {
+    const fetchItems = async () => {
+      try {
+        const itemIds = [2, 6, 17, 19];
+        const itemPromises = itemIds.map(id =>
+          axios.get(`https://fakestoreapi.com/products/${id}`)
+        );
+        const itemResponses = await Promise.all(itemPromises);
+        setItems(itemResponses.map(response => response.data));
+      } catch (error) {
         console.error('Error fetching items:', error);
-      });
-  }, []);
+      }
+    };
 
+    fetchItems();
+  }, []);
+  
   return (
     <div style={{ textAlign: 'center', padding: '20px', backgroundColor: 'white', color: '#c47335' }}>
      <HeaderTop />
