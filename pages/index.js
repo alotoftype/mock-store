@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import ProductCard from './ProductCard'
 import Header from './Header'
+import HeaderTop from './HeaderTop'
 
 const Home = () => {
   const [items, setItems] = useState([]);
@@ -18,6 +19,7 @@ const Home = () => {
 
   return (
     <div style={{ textAlign: 'center', padding: '20px', backgroundColor: 'white', color: '#c47335' }}>
+     <HeaderTop />
      <Header />
      <div className="background-section">
      <div className="background-section__text">Free your wardrobe</div>
