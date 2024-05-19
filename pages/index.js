@@ -28,7 +28,7 @@ const Home = () => {
   }, []);
 
   const handleShopNow = () => {
-    router.push('/products');
+    router.push('/listpage');
   };
 
   

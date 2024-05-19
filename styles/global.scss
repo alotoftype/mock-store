@@ -116,6 +116,33 @@ body {
     justify-items: center;
   }
 
+  .product-detail {
+    padding: 20px;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .product-detail__image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .product-detail__title {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  
+  .product-detail__price {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  
+  .product-detail__description {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
   footer {
     background-color: #C1C2C2;
     padding: 50px;

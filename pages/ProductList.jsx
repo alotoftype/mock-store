@@ -31,7 +31,7 @@ const ProductList = () => {
         {items.map(item => (
           <ProductCard key={item.id} item={item} />
         ))}
-
+      
       </div>
       <footer className="footer">
        
