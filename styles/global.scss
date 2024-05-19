@@ -97,6 +97,18 @@ body {
  
   }
 
+  .productListPage {
+    background-image: url('../public/men.png');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: #fff;
+  }
+
   footer {
     background-color: #C1C2C2;
     padding: 50px;
