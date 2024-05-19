@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import { useRouter } from 'next/router';
 import ProductCard from './ProductCard'
 import Header from './Header'
 import HeaderTop from './HeaderTop'
 
 const Home = () => {
+  const router = useRouter();
   const [items, setItems] = useState([]);
+
 
   useEffect(() => {
     const fetchItems = async () => {
@@ -23,6 +26,11 @@ const Home = () => {
 
     fetchItems();
   }, []);
+
+  const handleShopNow = () => {
+    router.push('/products');
+  };
+
   
   return (
     <div style={{ textAlign: 'center', padding: '20px', backgroundColor: 'white', color: '#c47335' }}>
@@ -30,7 +38,7 @@ const Home = () => {
      <Header />
      <div className="background-section">
      <div className="background-section__text">Free your wardrobe</div>
-        <button className="background-section__button"><span className="background-section__button-text">Shop</span>
+        <button className="background-section__button" onClick={handleShopNow} ><span className="background-section__button-text">Shop</span>
           <span className="background-section__button-text">Now</span></button>
       </div>
       <div style={{ display: 'flex', justifyContent: 'space-around', flexWrap: 'wrap' }}>
