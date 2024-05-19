@@ -1,0 +1,95 @@
+@import 'homestyles';
+
+body {
+  background-color: $background-color;
+  color: $text-color;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+    background-image: url('../public/Hero.png');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: #fff;
+  
+  
+  
+    &__logo {
+      width:400px;
+      height: auto;
+      margin-bottom: 5px;
+    }
+  
+    &__title {
+      font-size: 24px;
+      margin: 10px 0;
+    }
+  
+    &__subtitle {
+      font-size: 18px;
+      margin: 0;
+    }
+  }
+
+  .background-section {
+    background-image: url('../public/Rectangle.png');
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    width: 100%; 
+    max-width: 1600px; 
+    margin: 20px auto; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+
+    &__text {
+        position: absolute;
+        margin-bottom: 10px; 
+        font-size: 20px;
+        bottom: 100px;
+      left: 20px;
+      }
+  
+    &__button {
+      position: absolute;
+      bottom: 60px;
+      left: 30px;
+      padding: 10px 50px;
+      background-color: #F19953;
+      color:white;
+      border: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    &__button-text {
+      line-height: 1; /* Adjust line-height to stack the text */
+    }
+ 
+  }
+
+  footer {
+    background-color: #C1C2C2;;
+    padding: 50px;
+    color: #C1C2C2;
+    border-top: 5px solid #F19953; /* Change the top border color here */
+    width: 100%;
+    text-align: center;
+    margin-top: auto; /* Push the footer to the bottom */
+
+    // background-color: #C1C2C2;
+    // padding: 10px;
+    // width: 100%;
+    // text-align: center;
+    // margin-top: auto; 
+  }
