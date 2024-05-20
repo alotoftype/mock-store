@@ -30,19 +30,23 @@ const ProductDetail = () => {
   return (
     <div className="page-container" style={{ textAlign: 'center', padding: '20px', backgroundColor: '#edf7f6', color: '#56351e' }}>
       <HeaderTop />
-      <div className="background-section" style={{ marginBottom: '20px' }}>
-        <img src="/images/Hero.png" alt="Header Image" style={{ width: '100%', height: 'auto' }} />
-      </div>
+
       <div className="product-detail">
-        <img src={product.image} alt={product.title} className="product-detail__image" />
-        <h1 className="product-detail__title">{product.title}</h1>
-        <p className="product-detail__price">${product.price}</p>
-        <p className="product-detail__description">{product.description}</p>
-      </div>
+        <div className="product-detail__image-container">
+          <img src={product.image} alt={product.title} className="product-detail__image" />
+        </div>
+        <div className="product-detail__info">
+          <h1 className="product-detail__title">{product.title}</h1>
+          <p className="product-detail__price">${product.price}</p>
+          <button className="product-detail__button">Add to Cart</button>
+          <p className="product-detail__description">{product.description}</p>
+        </div>
+        </div>
       <footer className="footer">
         Footer
       </footer>
     </div>
+
   );
 };
 
