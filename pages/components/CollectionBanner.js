@@ -8,7 +8,8 @@ export default function CollectionBanner() {
         backgroundImage: "url('/images/Rectangle.png')",
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        minHeight: '300px'
+        minHeight: '300px',
+        minWidth: '1440px'
       }}>
         <div className="contentWrapper">
           {/* //text & button overlay */}

@@ -19,9 +19,6 @@ a {
   box-sizing: border-box;
 }
 
-/* .heroContainer {
-  min-height: 300px;
-} */
 
 /* Hero.css */
 .heroContainer {
@@ -29,6 +26,7 @@ a {
   background-size: cover;
   background-position: center;
   min-height: 600px;
+  min-width: 1440px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -40,6 +38,8 @@ a {
   flex-direction: column;
   align-items: center;
   position: relative;
+  border: 1px solid rgba(151, 151, 151, 1);
+  opacity: 1;
 }
 
 .overlayImage {
@@ -49,10 +49,57 @@ a {
 
 .productList {
   display: flex;
-  /* margin:  */
+  margin: 20px;
 }
 
 .productCard {
   margin: 15px;
+  min-height: 274px;
+  min-width: 274px;
 }
 
+/* Styles for desktop
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Styles for tablet */
+/* @media (max-width: 1200px) {
+  .container {
+    max-width: 800px;
+  }
+} */
+
+/* Styles for phone */
+/* @media (max-width: 600px) {
+  .container {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+} */ 
+
+/* Base styles for all devices */
+.collectionBanner {
+  height: auto;
+  min-height: 300px;
+  margin: 40px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Styles for tablets (maximum width 1200px) */
+@media only screen and (max-width: 1200px) {
+  .collectionBanner {
+      margin: 20px;
+      min-height: 250px;
+  }
+}
+
+/* Styles for phones (maximum width 600px) */
+@media only screen and (max-width: 600px) {
+  .collectionBanner {
+      margin: 10px;
+      min-height: 200px;
+  }
+}

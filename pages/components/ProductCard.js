@@ -28,13 +28,13 @@ export default function ProductCardVertical(props) {
         <SfLink href="#" variant="secondary" className="no-underline">
           {props.name}
         </SfLink>
-        <div className="flex items-center pt-1">
+        {/* <div className="flex items-center pt-1">
           <SfRating size="xs" value={5} max={5} />
 
           <SfLink href="#" variant="secondary" className="pl-1 no-underline">
             <SfCounter size="xs">{123}</SfCounter>
           </SfLink>
-        </div>
+        </div> */}
         <p className="block py-2 font-normal typography-text-sm text-neutral-700">
           {props.description}
         </p>

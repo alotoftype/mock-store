@@ -19,10 +19,11 @@ export default function Home() {
   return (
 
 
-    <div>
+    <div class="container">
       <Head>
 
-        <title>Create Next App</title>
+        <title>Bob's Super Spectacular Wonderful Amazing Store</title>
+        <meta name="description" content="A super spectacular wonderful amazing store for clothing "/>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
