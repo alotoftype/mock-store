@@ -121,6 +121,19 @@ body {
     max-width: 100%;
     height: auto;
   }
+
+  .product-detail__thumbnails {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .product-detail__thumbnail {
+    width: 30%;
+    cursor: pointer;
+    border: 1px solid gray;
+    padding: 5px;
+  }
   
   .product-detail__info {
     flex: 1;
