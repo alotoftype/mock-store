@@ -42,8 +42,9 @@ I was unable to find a free react component library. I feel between this one tha
 
 ### _Two Collections_
 
-Mens's clothing: [https://fakestoreapi.com/products/category/men's clothing](https://fakestoreapi.com/products/category/men%20clothing)
-women's clothing: [https://fakestoreapi.com/products/category/women's clothing](https://fakestoreapi.com/products/category/women%20clothing)
+Mens's clothing: [https://fakestoreapi.com/products/category/men's clothing]
+(https://fakestoreapi.com/products/category/men%27s%20clothing)
+women's clothing: [https://fakestoreapi.com/products/category/women's clothing](https://fakestoreapi.com/products/category/women%27s%20clothing)
 
 Use the following user for the cart: [https://fakestoreapi.com/carts/user/2](https://fakestoreapi.com/carts/user/2)
 
