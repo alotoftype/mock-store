@@ -96,6 +96,18 @@ body {
     }
  
   }
+
+  .list_logo {
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: #fff;
+  }
+
   .products-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -185,3 +197,37 @@ body {
     // text-align: center;
     // margin-top: auto; 
   }
+
+//   /* Mobile Styles */
+// @media (max-width: 768px) {
+//     body, html {
+//       background: black; 
+//     }
+  
+//     .background-section {
+//       margin: 20px auto; 
+//       padding: 20px;
+//       box-shadow: none; 
+//     }
+  
+//     .background-section__button {
+//       margin-top: 20px; 
+//     }
+  
+//     .products-grid {
+//       display: grid;
+//       grid-template-columns: repeat(2, 1fr); 
+//       gap: 10px;
+//       justify-items: center;
+//     }
+  
+//     .product-detail__thumbnails {
+//       flex-direction: column; 
+//       align-items: center;
+//     }
+  
+//     .product-detail__thumbnail {
+//       width: 80%;
+//       margin: 5px 0;
+//     }
+//   }

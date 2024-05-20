@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import ProductCard from './ProductCard';
-import Header from './Header';
+
 import HeaderTop from './HeaderTop';
 
 const ProductList = () => {
@@ -23,7 +23,7 @@ const ProductList = () => {
   return (
     <div className="page-container" style={{ textAlign: 'center', padding: '20px', backgroundColor: '#edf7f6', color: '#56351e' }}>
      <HeaderTop />
-      
+     <img src="men.png" alt="Logo" className="list_logo" />
       <div className="productListPage">
       
     </div>
