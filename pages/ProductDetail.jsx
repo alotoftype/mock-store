@@ -1,12 +1,16 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, } from 'react';
 import { useRouter } from 'next/router';
 import axios from 'axios';
 import HeaderTop from './HeaderTop';
+
+
 
 const ProductDetail = () => {
   const router = useRouter();
   const { id } = router.query;
   const [product, setProduct] = useState(null);
+  
+ 
 
   useEffect(() => {
     if (id) {
@@ -22,6 +26,16 @@ const ProductDetail = () => {
       fetchProduct();
     }
   }, [id]);
+
+  const addToCart = (product) => {
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    cart.push(product);
+    localStorage.setItem('cart', JSON.stringify(cart));
+    console.log('Added to cart:', product);
+  };
+
+  
+
 
   if (!product) {
     return <div>Loading...</div>;
@@ -43,7 +57,7 @@ const ProductDetail = () => {
         <div className="product-detail__info">
           <h1 className="product-detail__title">{product.title}</h1>
           <p className="product-detail__price">${product.price}</p>
-          <button className="product-detail__button">Add to Cart</button>
+          <button className="product-detail__button"  onClick={() => addToCart(product)} >Add to Cart</button>
           <p className="product-detail__description">{product.description}</p>
         </div>
         </div>
