@@ -1,65 +1,58 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import CollectionBanner from "./components/CollectionBanner";
+import { SfButton, SfBadge } from "@storefront-ui/react";
+import Hero from "./components/Hero";
+import Products from "./components/Products";
+import Footer from "./components/Footer";
+import { useState, useEffect } from "react";
+import WelcomeHeader from "./components/WelcomeHeader";
 
 export default function Home() {
+  const [products, setProducts] = useState([]);
+  const [featuredProducts, setFeaturedProducts] = useState([]);
+  
+
+  useEffect(() => {
+    const featuredProductsIds = [2, 6, 17, 9];
+
+  const fetchFeaturedProducts = async (ids) => {
+    console.log(ids);
+    const requests = ids.map((id) =>
+      fetch(`https://fakestoreapi.com/products/${id}`).then((res) =>
+        res.json()
+      )
+    );
+    try {
+      const featuredProducts = await Promise.all(requests);
+      setFeaturedProducts(featuredProducts);
+      console.log(featuredProducts);
+    } catch {
+      console.log("Error - Products not received");
+    }
+  };
+    fetchFeaturedProducts(featuredProductsIds);
+
+  }, []);
+
   return (
-    <div className={styles.container}>
+    <div class="">
       <Head>
-        <title>Create Next App</title>
+        <title>Bob's Super Spectacular Wonderful Amazing Store</title>
+        <meta
+          name="description"
+          content="A super spectacular wonderful amazing store for clothing "
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+      <main>
+        <WelcomeHeader />
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
+        <Hero />
+        <CollectionBanner />
+        <Products productList={featuredProducts} />
+        <Footer />
       </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
     </div>
-  )
+  );
 }

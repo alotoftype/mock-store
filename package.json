@@ -8,9 +8,18 @@
     "start": "next start"
   },
   "dependencies": {
+    "@storefront-ui/react": "^2.6.3",
     "eslint-config-next": "^14.2.3",
+    "g": "^2.0.1",
+    "n": "^9.2.3",
     "next": "^14.2.3",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.23.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.3"
   }
 }
