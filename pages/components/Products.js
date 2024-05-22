@@ -1,5 +1,5 @@
 import ProductCardVertical from "./ProductCard";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 export default function Products(props) {
     const [productList, setProductList] = useState(props.productList || []);
