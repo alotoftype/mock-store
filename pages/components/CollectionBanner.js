@@ -1,23 +1,26 @@
-import { SfButton } from '@storefront-ui/react';
-import Image from 'next/image';
+import { SfButton } from "@storefront-ui/react";
+import Image from "next/image";
 
 export default function CollectionBanner() {
   return (
-    <div className="collectionBanner" style={{
-        //banner image
+    <div className="bannerContainer">
+    <div
+      className="collectionBanner"
+      style={{
         backgroundImage: "url('/images/Rectangle.png')",
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        minHeight: '300px',
-        minWidth: '1440px'
-      }}>
-        <div className="contentWrapper">
-          {/* //text & button overlay */}
-          <h2>Free your wardrobe</h2>
-          <SfButton>Shop Now</SfButton>
-
-       
-        </div>
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        minHeight: "300px",
+      }}
+    >
+      
+    </div>
+    <div className="bannerContentWrapper">
+        <h2 className="welcome-text">Free your wardrobe</h2>
+        <a href="/PLP">
+          <SfButton className="bannerButton">Shop Now</SfButton>
+        </a>
       </div>
+    </div>
   );
 }
