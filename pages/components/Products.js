@@ -1,13 +1,19 @@
 import ProductCardVertical from "./ProductCard";
-import React from "react";
+import React, { useEffect } from "react";
 
 export default function Products(props) {
-  console.log(props);
+    const [productList, setProductList] = useState(props.productList || []);
+    
+    useEffect(() => {
+        if(props.productList) {
+            setProductList(props.productList);
+        }
+    }, [props.productList]);
 
   return (
     <div>
       <ul className="productList">
-        {props.productList.map((product) => (
+        {productList.map((product) => (
           <li className="productCard" key={product.id}
           >
             <ProductCardVertical

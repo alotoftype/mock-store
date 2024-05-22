@@ -41,8 +41,8 @@ export default function ProductDetails(props) {
       }}
     >
       <section className="product-detail">
-        <h1 className="productTitle">{productDetails.title}</h1>
-        <strong className="productPrice" >${productDetails.price}</strong>
+        <h1 className="productTitle">{productDetails ? productDetails.title : ''}</h1>
+        <strong className="productPrice" >${productDetails ? productDetails.price : ''}</strong>
         
             <SfButton
               size="lg"
@@ -55,7 +55,7 @@ export default function ProductDetails(props) {
 
         <ul className="descriptionText">
           <p>
-          {productDetails.description}
+          {productDetails ? productDetails.description : ''}
           </p>
         </ul>
       </section>
